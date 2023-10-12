@@ -1,0 +1,676 @@
+body,
+html {
+    width: 100%;
+    height: fit-content;
+    overflow-x: hidden;
+}
+
+
+main{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: 0.4s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 10%;
+    padding: 0 10px;
+    padding-top: 10px;
+    align-items: center;
+   
+}
+
+.left {
+    display: flex;
+    justify-content: space-between;
+    width: 43rem;
+    align-items: center;
+}
+
+.left i {
+    display: none;
+}
+
+.left img {
+    width: 10rem;
+    height: 3rem;
+}
+
+.left ul {
+    display: flex;
+    list-style: none;
+    width: 30rem;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.left li {
+    margin: 0 2px;
+    transition: 0.5s;
+
+}
+
+.left li:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+    color: #ea0707;
+}
+
+.right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25rem;
+}
+
+.right button {
+    width: 12rem;
+    height: 2rem;
+    border: 1px solid red;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: 0.4s;
+
+}
+
+.right button:hover {
+    background-color: #ea0707;
+    color: aliceblue;
+    border-radius: 20px 2px;
+}
+
+.right span {
+    color: #c52222;
+    border-bottom: dotted 1px;
+}
+
+.right h2 {
+    font-size: 1.1rem;
+}
+
+section {
+    width: 100vw;
+    height: 60vh;
+    margin-top: 1%;
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+    color: aliceblue;
+   
+}
+
+section img {
+
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    filter: brightness(0.4)
+}
+
+.containt {
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    top: 20%;
+    transition: 0.4s;
+}
+.containt h1 {
+    font-size: 4.5rem;
+}
+
+.containt p {
+    font-size: 1.5rem;
+    padding: 2rem 11rem;
+    margin: 1rem 0;
+}
+
+.containt button {
+    font-size: 1rem;
+    font-weight: 700;
+    height: 3rem;
+    width: 15rem;
+    border-radius: 15px;
+    background:transparent;
+    color: antiquewhite;
+    border: 2px solid white;
+    transition: 0.4s;
+}
+
+.containt button:hover {
+    transform: scale(1.05);
+}
+.containt button:active{
+    background-color: rgb(29, 27, 27);
+    color: rgb(13, 13, 13);
+}
+
+.lawyer-info {
+    width: 99%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(207, 209, 211);
+    border-radius: 15px;
+    padding: 5%;    
+}
+
+.lawyer-info .pic {
+    width: 420px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.pic img {
+    width:420px;
+    height:600px;
+    border-radius: 7rem 0.3rem 0.3rem 0.3rem;
+}
+.lawyer-desc{
+    width: 600px;
+    
+}
+.lawyer-desc .info{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.info h1{
+    font-size: 3.5rem;
+    margin-top: 10%;
+}
+.info h2{
+    font-size: 2.5rem;
+    font-weight:300 ;  
+    font-family: "Gill Sans Extrabold";  
+}
+.info p{
+    font-size: 1rem;
+    font-weight: 100;
+}
+.info span{
+    font-size: 0.8rem;
+}
+.pArea {
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 1%;
+    background-color: rgb(207, 209, 211);
+}
+.pArea span{
+    font-size: 3rem;
+    padding: 2%;
+
+}
+.area{
+    width: 100%;
+    display:flex;   /*flex-direction: row;*/
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.first{
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+ 
+    
+    padding: 2%;
+    justify-content: space-around;
+}
+.child{
+    width: 320px;
+    text-align: center;
+    margin: 2%;
+    background-color: rgba(215, 216, 218, 0.895);
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.child:hover{
+   
+    transform: scale(1.02);
+    
+}
+.child h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.child p{
+    font-size: 1rem;
+    padding: 5%;
+    font-weight: 400;
+    font-family: "Gill Sans Extrabold";
+}
+.second{
+    width: 400px;
+    display: flex;
+    padding: 2%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #b40000;
+    border-radius: 5px 100px 5px 5px;
+    margin-bottom: 2%;
+}
+.form{
+    width: 300px;
+    height: fit-content;
+    background-color:#b40000; 
+    padding: 3%;
+    
+}
+.second h1{
+    font-size: 2.7rem;
+    font-weight: 500;
+}
+.second p{
+  font-size: 1rem;
+  margin: 20px 0;
+}
+
+.second form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+}
+form input,select,button,textarea
+{
+    height: 3rem;
+    text-align: center;
+    font-weight: 700;
+    font-family:'Poppins', sans-serif ;
+    background-color: #b40000;
+    color:#fff;
+    border:1px solid rgba(255,255,255,0.5)
+    
+}
+option{
+    background-color: white;
+    color: black;
+}
+input::placeholder{
+
+    color: white;
+}
+
+form textarea{
+    height: 5rem;
+    padding-top: 23px;
+}
+textarea::placeholder{
+    color: white;
+}
+form button{
+    background-color: #ff6f00;
+    border-radius: 3px ;
+}
+form button:hover{
+    transform: scale(1.01);
+}
+
+.chooseus{
+    width: 99%;
+    border-radius: 20px;
+    background-color: rgb(207, 209, 211);
+    margin-top: 1%;
+    padding: 3% 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.chooseus div{
+    width: 600px;
+    margin: 0 2%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+}
+.chooseus h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #b40000;
+}
+.chooseus h2{
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-family: "Gill Sans Extrabold";
+}
+.chooseus h3{
+    font-size: 1rem;
+    font-weight: 100;
+}
+.chooseus button{
+    background-color: #b40000;
+    width: 150px;
+    font-size: 1rem;
+    height: 40px;
+    border-radius: 5px;
+}
+.chooseus button:hover{
+    transform:scale(1.01);
+}
+.chooseus button:active{
+    transform: scale(1.05);
+
+}
+
+footer{
+    width: 100%;
+    height:fit-content;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    
+    background-color: #590606;
+    color: white;
+    border: 2px solid;
+}
+footer .logo{
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 40px 0;
+    font-size: 0.7rem;
+    line-height: 1.5;
+}
+.logo h2{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.logo ul{
+    display: flex;
+    list-style: none;
+    font-size: 1.5rem;
+    gap: 50px;
+}
+.logo a:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+    color: #ea0707;
+}
+.logo a{
+    color: white;
+}
+.contact{
+    width: 80%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top:1px solid;
+    border-bottom:1px solid;
+
+}
+.contact h3{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+}
+h3 b{
+    font-size: 2rem;
+    font-weight: 100;
+}
+.icon{
+    display: flex;
+}
+.icon img{
+    height: 25px;
+    margin: 0 5px;
+   
+}
+.icon img:hover{
+    transform: scale(1.3);
+}
+.contact button{
+    height: 40px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+.contact button:hover{
+    transform: scale(1.05);
+}
+.copyright{
+    margin: 30px;
+    text-align: center;
+}
+.copyright a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.copyright a:hover{
+    color: orange;
+}
+@media (max-width:1300px) {
+    .pic{
+        width: 294px;
+    }
+    .lawyer-desc{
+        width: 420px;
+    }
+    .pic img{
+        width: 294px;
+        height: 420px;
+    }
+    .info h1{
+        font-size: 2.5rem;
+    }
+    .info h2{
+        font-size:1.5rem;
+    }
+    .info p{
+        font-size: 0.8rem;
+    }
+    .info span{
+        font-size: 0.6rem;
+    }
+}
+@media (max-width:1214px) {
+    .first{
+        width: 90%;
+    }
+    .second{
+        width: 90%;
+        border-radius: 50px 50px 2px 0px;
+    }
+    .pArea span{
+        font-size: 2.5rem;
+        margin-top: 10px;
+    }
+    .form{
+        width: 80%;
+    }
+    
+}
+@media (max-width:1200px) {
+    .right {
+        width: fit-content;
+    }
+
+    .right h2 {
+        display: none;
+    }
+    .containt{
+        top:15%;
+    }
+    .containt h1{
+        font-size: 4rem;
+    }
+    .containt p{
+        font-size:1.3rem;
+    }
+}
+
+@media (max-width:1050px) {
+  
+    .containt h1{
+        font-size: 3rem;
+    }
+    .containt p{
+        font-size:1rem;
+        padding: 1rem 5rem;
+    }
+}
+
+
+
+@media (max-width:950px) {
+    .left {
+        width: 100%;
+    }
+
+    .right button {
+        display: none;
+    }
+    section img{
+        height: 65vh;
+    }
+    .containt h1{
+        font-size: 2rem;
+    }
+    .containt p{
+        font-size: 1rem;
+        padding: 0 3rem;
+    }
+    .pic img{
+        border-radius: 1rem 1rem 1rem 1rem;
+    }
+    .lawyer-desc{
+        width: 100%;
+        padding: 0 5% 0 5% 0;
+        text-align: center;
+        
+    }
+    .lawyer-desc .info{
+        gap:10px;
+        width: 100%;
+    }
+    .info h1{
+        font-size: 1.8rem;
+        margin-top: 5%;
+    }
+    .info h2{
+        font-size:1.2rem;
+    }
+    .info p{
+        display: none;
+    }
+    .form h1{
+        font-size: 1.5rem;
+    }
+    .form p{
+        font-size: 0.8rem;
+    }
+    .contact button{
+        display: none;
+    }
+}
+@media (max-width:850px) {
+    footer .logo{
+        width: 99%;
+    }
+    .logo img{
+        width: 150px;
+    }
+    .logo h2{
+       padding: 0 2%;
+    }
+    .logo ul{
+        font-size: 0.8rem;
+        gap:15px
+    }
+    .contact{
+        flex-direction: column;
+        height: 100px;
+        padding: 1rem 0;
+    }
+    .contact img{
+        padding-top: 10px;
+        height:40px ;
+    }
+    .contact h3 {
+        font-size: 0.8rem;
+        
+    }
+    .copyright{
+        font-size: 0.7rem;
+    }
+    
+
+}
+@media (max-width:768px) {
+
+    .left i {
+        font-size: 1.5rem;
+        font-weight: 700;
+        display: inline;
+    }
+
+    .left ul {
+        display: none;
+    }
+}
+@media (min-height:844px) {
+    .containt h1{
+        font-size: 2.8rem;
+    }
+    .containt p{
+        font-size: 1.3rem;
+        padding: 2rem;
+    }
+    
+}
+@media (min-height:1024px) {
+    .containt h1{
+        font-size: 5rem;
+    }
+    .containt p{
+        font-size: 1.8rem;
+        padding: 2.8rem;
+    }
+    
+}
+@media (min-height:1368px) {
+    .containt h1{
+        font-size: 6rem;
+    }
+    section img{
+        height: 50vh;
+    }
+}
